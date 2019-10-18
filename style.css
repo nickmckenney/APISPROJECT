@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-    background-color: orange;
+    background-color: grey;
     color: white;
     text-align: center;
     margin: 0;
@@ -15,32 +15,26 @@ h1 {
 main {
     text-align: center;
 }
-
-button {
-    margin: 50px auto;
-    background-color: lightskyblue;
-    color: white;
-    font-size: 25px;
-    border-radius: 20px 20px 20px 20px;
-    padding: 10px;
-    box-shadow: 10px 10px 32px -12px rgba(0,0,0,0.75);
-}
-
-input {
-    height: 45px;
-}
-
-input[type="text"] {
-    font-size:25px;
-}
-
-img {
-    height: 350px;
-    width: auto;
-    box-shadow: 10px 10px 32px -12px rgba(0,0,0,0.75);
-}
-
 ul {
-    list-style: none;
-    font-size: 14px;
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+ background-color: #333;
+}
+
+li {
+ float: left;
+}
+
+li a {
+ display: block;
+ color: white;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+}
+
+li a:hover {
+ background-color: #111;
 }
