@@ -17,7 +17,7 @@ main {
 }
 body{
   /* background-color: black; */
-background-image: url("http://giphygifs.s3.amazonaws.com/media/fmsA2RG7TKxuo/giphy.gif");
+background-image: url("https://thumbs.gfycat.com/FeminineFlawedAlbertosaurus-size_restricted.gif");
 background-size:cover;
   background-repeat: no-repeat;
 
@@ -25,13 +25,16 @@ background-size:cover;
 h2{
   background-color: ;
   color: white;
+  font-size: 40px;
+  
   text-align: center;
   margin: 0;
   padding: 30px 0;
 }
 p1,h3,h4,h5,h6{
-  font-size:20px;
-  color:red;
+  font-size:30px;
+  font-style: oblique;
+  color:green;
 }
 ul {
  list-style-type: none;
