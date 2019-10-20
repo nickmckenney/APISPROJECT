@@ -31,4 +31,4 @@ NPM packages
 ## Learning
 
 ### This project gave me a better clarities for what I learned in the past 3 weeks. I know what I need to keep studying as well as what I know what to improve on
-* Hat tip to anyone whose code was used
+
