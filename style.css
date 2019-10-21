@@ -26,7 +26,7 @@ h2{
   background-color: ;
   color: white;
   font-size: 40px;
-  
+
   text-align: center;
   margin: 0;
   padding: 30px 0;
@@ -34,7 +34,35 @@ h2{
 p1,h3,h4,h5,h6{
   font-size:30px;
   font-style: oblique;
-  color:green;
+
+  background: linear-gradient(to right, red 20%, green 30%, pink 70%, white 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  /* background-size: 200% auto; */
+  animation: textShine 7s ease-in-out infinite alternate;
+}
+
+h1{ /*DALLAS HELPED ME WITH THIS */
+  font-size: 3rem;
+ background: linear-gradient(to right, red 20%, purple 30%, pink 70%, black 80%);
+ -webkit-background-clip: text;
+ background-clip: text;
+ -webkit-text-fill-color: transparent;
+ text-fill-color: transparent;
+ background-size: 50% auto;
+ animation: textShine 4s ease-in-out infinite alternate;
+}
+li{ /*DALLAS HELPED ME WITH THIS */
+  font-size: 1.5rem;
+ background: linear-gradient(to right, red 20%, purple 30%, pink 70%, black 80%);
+ -webkit-background-clip: text;
+ background-clip: text;
+ -webkit-text-fill-color: transparent;
+ text-fill-color: transparent;
+ background-size: 50% auto;
+ animation: textShine 4s ease-in-out infinite alternate;
 }
 ul {
  list-style-type: none;
@@ -43,7 +71,40 @@ ul {
  overflow: hidden;
  background-color: #333;
 }
+@keyframes textShine {/*DALLAS HELPED ME WITH THIS */
+ to {
+   background-position: 200%;
+ }
+}
+.element {
+  width: 100%;
+  height: 100%;
+  animation: pulse 8s;
+}
 
+@keyframes pulse {
+  from{
+    width:0%;
+  }
+  to{
+    width:100%;
+  }
+
+  0% {
+    transition: all 3000ms ease;
+      background-size: 100% 100%;
+    background-image: linear-gradient(#84fab0 0%, #8fd3f4 100%);
+  }
+  25% {
+    transition: all 3000ms ease;
+      background-size: 100% 100%;
+    background-image: linear-gradient(#84fab0 0%, #8fd3f4 100%);
+  }
+  50% {
+    transition: all 3000ms ease;
+      background-size: 100% 100%;
+background-image:linear-gradient(purple 0%, pink 100%);  }
+}
 li {
  float: left;
 }
@@ -57,5 +118,11 @@ li a {
 }
 
 li a:hover {
- background-color: #111;
+font-style: italic;
+font-family: cursive;
+}
+@media screen and (max-width: 1000px) {
+  body{
+    /* width:100%; */
+  }
 }
