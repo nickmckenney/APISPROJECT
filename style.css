@@ -16,8 +16,8 @@ main {
     text-align: center;
 }
 body{
-  /* background-color: black; */
-background-image: url("https://thumbs.gfycat.com/FeminineFlawedAlbertosaurus-size_restricted.gif");
+  background-color: black;
+/* background-image: url("https://thumbs.gfycat.com/FeminineFlawedAlbertosaurus-size_restricted.gif"); */
 background-size:cover;
   background-repeat: no-repeat;
 
@@ -35,7 +35,7 @@ p1,h3,h4,h5,h6{
   font-size:30px;
   font-style: oblique;
 
-  background: linear-gradient(to right, red 20%, green 30%, pink 70%, white 80%);
+  background: linear-gradient(to right, white 20%, green 30%, green 70%, white 80%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -51,7 +51,7 @@ h1{ /*DALLAS HELPED ME WITH THIS */
  background-clip: text;
  -webkit-text-fill-color: transparent;
  text-fill-color: transparent;
- background-size: 50% auto;
+ background-size: 5% auto;
  animation: textShine 4s ease-in-out infinite alternate;
 }
 li{ /*DALLAS HELPED ME WITH THIS */
@@ -61,8 +61,18 @@ li{ /*DALLAS HELPED ME WITH THIS */
  background-clip: text;
  -webkit-text-fill-color: transparent;
  text-fill-color: transparent;
- background-size: 50% auto;
+ background-size: 60% auto;
  animation: textShine 4s ease-in-out infinite alternate;
+}
+li {
+ float: left;
+}
+
+li a {
+ display: block;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
 }
 ul {
  list-style-type: none;
@@ -105,22 +115,9 @@ ul {
       background-size: 100% 100%;
 background-image:linear-gradient(purple 0%, pink 100%);  }
 }
-li {
- float: left;
-}
 
-li a {
- display: block;
- color: white;
- text-align: center;
- padding: 14px 16px;
- text-decoration: none;
-}
 
-li a:hover {
-font-style: italic;
-font-family: cursive;
-}
+
 @media screen and (max-width: 1000px) {
   body{
     /* width:100%; */

@@ -19,6 +19,11 @@ let hr = document.querySelector("hr");
 let filmStorer = [];
 // for (let i = 0; i < li.length; i++) {
 li[0].addEventListener("click", function(evt) {
+  li[0].style.border = "15px solid black";
+  li[1].style.border = "15px solid grey";
+  li[2].style.border = "15px solid grey";
+  li[3].style.border = "15px solid grey";
+
   filmStorer = [];
   evt.preventDefault();
   let random = Math.floor(Math.random() * 9);
@@ -106,6 +111,11 @@ li[0].addEventListener("click", function(evt) {
 //NEW PAGE
 li[1].addEventListener("click", function(evt) {
   let random = Math.floor(Math.random() * 9);
+  li[1].style.border = "15px solid black";
+  li[0].style.border = "15px solid grey";
+  li[2].style.border = "15px solid grey";
+  li[3].style.border = "15px solid grey";
+
   p1.innerText = "";
   h3.innerText = "";
   h4.innerText = "";
@@ -136,6 +146,10 @@ li[1].addEventListener("click", function(evt) {
     .catch(err => console.log(err));
 });
 li[2].addEventListener("click", function(evt) {
+  li[2].style.border = "15px solid black";
+  li[1].style.border = "15px solid grey";
+  li[0].style.border = "15px solid grey";
+  li[3].style.border = "15px solid grey";
   let random = Math.floor(Math.random() * 9);
 
   evt.preventDefault();
@@ -169,10 +183,12 @@ li[2].addEventListener("click", function(evt) {
     .catch(err => console.log(err));
 });
 li[3].addEventListener("click", function(evt) {
+  li[3].style.border = "15px solid black";
+  li[1].style.border = "15px solid grey";
+  li[0].style.border = "15px solid grey";
+  li[2].style.border = "15px solid grey";
   let random = Math.floor(Math.random() * 9);
-
   evt.preventDefault();
-
   p1.innerText = "";
   h3.innerText = "";
   h4.innerText = "";
