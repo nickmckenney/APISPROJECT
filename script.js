@@ -16,13 +16,18 @@ let p = document.querySelector("p");
 let p1 = document.querySelector("p1");
 let br = document.querySelector("br");
 let hr = document.querySelector("hr");
+let li1 = document.querySelector(".li1");
+let li2 = document.querySelector(".li2");
+let li3 = document.querySelector(".li3");
+let li4 = document.querySelector(".li4");
+
 let filmStorer = [];
 // for (let i = 0; i < li.length; i++) {
 li[0].addEventListener("click", function(evt) {
-  li[0].style.border = "15px solid black";
-  li[1].style.border = "15px solid grey";
-  li[2].style.border = "15px solid grey";
-  li[3].style.border = "15px solid grey";
+  li1.style.backgroundColor = "grey";
+  li2.style.backgroundColor = "white";
+  li3.style.backgroundColor = "white";
+  li4.style.backgroundColor = "white";
 
   filmStorer = [];
   evt.preventDefault();
@@ -77,50 +82,13 @@ li[0].addEventListener("click", function(evt) {
     .catch(err => console.log(err));
 });
 
-// fetch("https://swapi.co/api/species/")
-//   .then(res => res.json())
-//
-//   .then(res => {
-//     h5.innerText = res.results[random].name;
-//   })
-//   .catch(err => console.log(err));
-//
-// fetch("https://swapi.co/api/starships/")
-//   .then(res => res.json())
-//
-//   .then(res => {
-//     console.log(res);
-//     h6.innerText = "Starship class: " + res.results[random].name;
-//   })
-//   .catch(err => console.log(err));
-//
-// fetch("https://swapi.co/api/films/")
-//   .then(res => res.json())
-//
-//   .then(res => {
-//     console.log(res);
-//     p.innerText = "Yea bois films: " + res.results[random].title;
-//   })
-//   .catch(err => console.log(err));
-
-//NEW PAGE
-//NEW PAGE
-//NEW PAGE
-//NEW PAGE
-//NEW PAGE
-//NEW PAGE
 li[1].addEventListener("click", function(evt) {
+  li2.style.backgroundColor = "grey";
+  li1.style.backgroundColor = "white";
+  li3.style.backgroundColor = "white";
+  li4.style.backgroundColor = "white";
   let random = Math.floor(Math.random() * 9);
-  li[1].style.border = "15px solid black";
-  li[0].style.border = "15px solid grey";
-  li[2].style.border = "15px solid grey";
-  li[3].style.border = "15px solid grey";
 
-  p1.innerText = "";
-  h3.innerText = "";
-  h4.innerText = "";
-
-  h5.innerText = "";
   evt.preventDefault();
 
   // fetch(url + input.value)
@@ -146,21 +114,13 @@ li[1].addEventListener("click", function(evt) {
     .catch(err => console.log(err));
 });
 li[2].addEventListener("click", function(evt) {
-  li[2].style.border = "15px solid black";
-  li[1].style.border = "15px solid grey";
-  li[0].style.border = "15px solid grey";
-  li[3].style.border = "15px solid grey";
+  li3.style.backgroundColor = "grey";
+  li1.style.backgroundColor = "white";
+  li2.style.backgroundColor = "white";
+  li4.style.backgroundColor = "white";
   let random = Math.floor(Math.random() * 9);
 
   evt.preventDefault();
-
-  p1.innerText = "";
-  h3.innerText = "";
-  h4.innerText = "";
-  h2.innerText = "";
-  h6.innerText = "";
-
-  h5.innerText = "";
   fetch(url3)
     .then(res => res.json())
 
@@ -183,19 +143,12 @@ li[2].addEventListener("click", function(evt) {
     .catch(err => console.log(err));
 });
 li[3].addEventListener("click", function(evt) {
-  li[3].style.border = "15px solid black";
-  li[1].style.border = "15px solid grey";
-  li[0].style.border = "15px solid grey";
-  li[2].style.border = "15px solid grey";
+  li4.style.backgroundColor = "grey";
+  li1.style.backgroundColor = "white";
+  li2.style.backgroundColor = "white";
+  li3.style.backgroundColor = "white";
   let random = Math.floor(Math.random() * 9);
   evt.preventDefault();
-  p1.innerText = "";
-  h3.innerText = "";
-  h4.innerText = "";
-  h2.innerText = "";
-  h6.innerText = "";
-
-  h5.innerText = "";
 
   // fetch(url + input.value)
   fetch(url5)

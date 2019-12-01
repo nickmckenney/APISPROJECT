@@ -1,29 +1,21 @@
 body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-}
-
-h1 {
-    background-color: ;
-    color: white;
-    text-align: center;
-    margin: 0;
-    padding: 30px 0;
-    box-shadow: 10px 10px 32px -12px rgba(0,0,0,0.75);
-}
-
-main {
-    text-align: center;
-}
-body{
-  background-color: black;
-/* background-image: url("https://thumbs.gfycat.com/FeminineFlawedAlbertosaurus-size_restricted.gif"); */
-background-size:cover;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: grey;
+  /* background-image: url("https://thumbs.gfycat.com/FeminineFlawedAlbertosaurus-size_restricted.gif"); */
+  background-size: cover;
   background-repeat: no-repeat;
-
 }
-h2{
-  background-color: ;
+/* .li1 {
+  background-color: grey;
+}
+.li2 {
+  background-color: grey;
+} */
+main {
+  text-align: center;
+}
+h2 {
   color: white;
   font-size: 40px;
 
@@ -31,94 +23,45 @@ h2{
   margin: 0;
   padding: 30px 0;
 }
-p1,h3,h4,h5,h6{
-  font-size:30px;
+p1,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 30px;
   font-style: oblique;
+  color: green;
+}
 
-  background: linear-gradient(to right, white 20%, green 30%, green 70%, white 80%);
+h1 {
+  margin: 0;
+  padding: 30px 0;
+  box-shadow: 10px 10px 32px -12px rgba(0, 0, 0, 0.75);
+  font-size: 3rem;
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
-  /* background-size: 200% auto; */
-  animation: textShine 7s ease-in-out infinite alternate;
-}
-
-h1{ /*DALLAS HELPED ME WITH THIS */
-  font-size: 3rem;
- background: linear-gradient(to right, red 20%, purple 30%, pink 70%, black 80%);
- -webkit-background-clip: text;
- background-clip: text;
- -webkit-text-fill-color: transparent;
- text-fill-color: transparent;
- background-size: 5% auto;
- animation: textShine 4s ease-in-out infinite alternate;
-}
-li{ /*DALLAS HELPED ME WITH THIS */
-  font-size: 1.5rem;
- background: linear-gradient(to right, red 20%, purple 30%, pink 70%, black 80%);
- -webkit-background-clip: text;
- background-clip: text;
- -webkit-text-fill-color: transparent;
- text-fill-color: transparent;
- background-size: 60% auto;
- animation: textShine 4s ease-in-out infinite alternate;
+  text-align: center;
+  background-size: 5% auto;
 }
 li {
- float: left;
+  /*DALLAS HELPED ME WITH THIS */
+  font-size: 1.5rem;
+  color: green;
+  background-size: 60% auto;
+  float: left;
 }
 
 li a {
- display: block;
- text-align: center;
- padding: 14px 16px;
- text-decoration: none;
-}
-ul {
- list-style-type: none;
- margin: 0;
- padding: 0;
- overflow: hidden;
-}
-@keyframes textShine {/*DALLAS HELPED ME WITH THIS */
- to {
-   background-position: 200%;
- }
-}
-.element {
-  width: 100%;
-  height: 100%;
-  animation: pulse 8s;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-@keyframes pulse {
-  from{
-    width:0%;
-  }
-  to{
-    width:100%;
-  }
-
-  0% {
-    transition: all 3000ms ease;
-      background-size: 100% 100%;
-    background-image: linear-gradient(#84fab0 0%, #8fd3f4 100%);
-  }
-  25% {
-    transition: all 3000ms ease;
-      background-size: 100% 100%;
-    background-image: linear-gradient(#84fab0 0%, #8fd3f4 100%);
-  }
-  50% {
-    transition: all 3000ms ease;
-      background-size: 100% 100%;
-background-image:linear-gradient(purple 0%, pink 100%);  }
-}
-
-
-
-@media screen and (max-width: 1000px) {
-  body{
-    /* width:100%; */
-  }
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: floralwhite;
 }
